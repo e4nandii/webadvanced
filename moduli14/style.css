@@ -1,0 +1,29 @@
+
+nav a{
+    padding: 20px;
+    margin: 20px;
+}
+
+nav{
+background-color: aquamarine;
+margin: 20px;
+padding: 20px;       
+}
+nav a:hover{
+    background-color: rgb(red, green, blue);
+}
+nav a:active{
+background-color: black;
+
+}
+nav a:visited {
+color: red;
+
+
+}
+
+
+
+
+
+
