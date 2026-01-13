@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background: #333;
+    color: white;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+section {
+    flex: 1 1 300px;
+}
+
+/* Image */
+img {
+    max-width: 100%;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+/* Animation */
+.card {
+    padding: 1rem;
+    background: lightblue;
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #f4f4f4;
+}
+
+/* Media Query */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+}
