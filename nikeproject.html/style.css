@@ -7,7 +7,7 @@
 .hero {
     height: 100vh;
     position: relative;
-    color: white;
+    color: black;
 }
 
 .bg-video {
@@ -31,7 +31,7 @@
 }
 
 .navbar a {
-    color: white;
+    color: black;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -49,7 +49,7 @@
 .btn {
     background: red;
     padding: 10px 20px;
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
