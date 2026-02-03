@@ -42,3 +42,61 @@ newFunction();
 //kjo nuk punon
 alert(localVar);
 
+
+function toSeconds(minutat){
+    return minutat * 60;
+}
+
+console.log(toSeconds(60));
+
+
+//objektet
+
+
+var car = { 
+    name:"AUDI", 
+    color:"black", 
+    year:2022, 
+    kilometers:20000
+    startengine : function(){
+        alert("Vroom");
+    }
+    getKilometers(){
+        return this.kilometers
+    }
+    set setKilometers(km){
+        this.kilometers = km;
+    }
+};
+
+car.startengine();
+
+var school = {
+    name:"Digital School"
+    subject:"Programming"
+    students:5,
+    year:2026
+};
+
+alert(car.name);
+
+alert(car['color']);
+
+
+var computer = new Object();
+
+computer.name = "Nvidia";
+computer.CPU = "Intel i7-14900KF";
+computer.RAM = "32GB";
+computer.GPU = "nVidia GeForce RTX 5070"
+
+
+computer.type = function () {
+    return this.name + ", " + this.CPU + ", " + this.RAM + ", " + this.GPU
+};
+
+delete computer.GPU;
+
+console.log(car.getKilometers);
+car.setKilometers = 100;
+console.log(car.getKilometers);
